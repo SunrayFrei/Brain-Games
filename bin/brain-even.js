@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import readlineSync from 'readline-sync';
 import getName from '../src/cli.js';
 
@@ -24,7 +26,10 @@ const playGame = () => {
     if (answer.toLowerCase() === isCorrect) {
       console.log(`Correct!`);
       correctAnswers += 1;
-    } else console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isCorrect}'.\nLet's try again, ${userName}!`);
+    } else if (answer.toLowerCase() !== isCorrect) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isCorrect}'.\nLet's try again, ${userName}!`);
+      correctAnswers += 3;
+    }
   }
 }
 playGame();
