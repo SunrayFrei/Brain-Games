@@ -10,6 +10,14 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-plugin-react": "^7.33.2"
   }
 }
