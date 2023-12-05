@@ -16,7 +16,7 @@ const playGame = () => {
   let correctAnswers = 0;
 
   while (correctAnswers < 3) {
-    const number = Math.floor(Math.random() * 10) + 1;
+    const number = Math.floor(Math.random() * 100) + 1;
     console.log(`Question: ${number}`);
     const answer = readlineSync.question(`Your answer: `);
 
