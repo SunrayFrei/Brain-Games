@@ -1,30 +1,24 @@
 import readlineSync from 'readline-sync';
+import getName from './cli.js';
+import { genNum, correctnessCheck } from './general.js';
+
 
 const playEvenGame = () => {
-  
-  console.log('May I have your name?')
-  const userName = readlineSync.question('Your answer: ');
-  console.log(`Hello, ${userName}!`);
-
-
+  const playerName = getName();
   console.log(`Answer "yes" if the number is even, otherwise answer "no".`);
-  let correctAnswers = 0;
-
-  while (correctAnswers < 3) {
-    const number = Math.floor(Math.random() * 100) + 1;
-    console.log(`Question: ${number}`);
-    const answer = readlineSync.question(`Your answer: `);
-
-    const isCorrect = number % 2 === 0 ? 'yes' : 'no';
-
-    if (answer.toLowerCase() === isCorrect) {
-      console.log(`Correct!`);
-      correctAnswers += 1;
-    } else if (answer.toLowerCase() !== isCorrect) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isCorrect}'.\nLet's try again, ${userName}!`);
-      correctAnswers += 3;
+  let continueOrEnd = true;
+  
+  for (let i = 0; i < 3; i += 1) {
+    if (continueOrEnd === false) {
+      return;
     }
-  }
+    const number = genNum();
+    console.log(`Question: ${number}`);
+    const answer = readlineSync.question(`Your answer: `).toLowerCase();
+    const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
+    const isCorrect = correctnessCheck(answer, correctAnswer, playerName);
+    continueOrEnd = isCorrect;
+  };
+  console.log(`Congratulations, ${playerName}`);
 };
-
 export default playEvenGame;
