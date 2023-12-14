@@ -1,4 +1,8 @@
-### Hexlet tests and linter status:
+# Brain Games project
+
+- There are five games: brain-even, brain-calc, brain-gcd, brain-prime and brain-progression.
+- Minimals system requirements: node.js 20.10.0
+- Installation instructions: make install### Hexlet tests and linter status:
 
 [![Actions Status](https://github.com/SunrayFrei/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SunrayFrei/frontend-project-44/actions)
 
