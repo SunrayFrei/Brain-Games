@@ -1,6 +1,25 @@
 import readlineSync from 'readline-sync';
 import getName from '../cli.js';
-import { genNumUnderTen, getExpression, correctnessCheck } from './general.js';
+import { genNumUnderTen, checkCorrectness } from './utils.js';
+
+const getExpression = (num1, num2, operator) => {
+  let expression = 0;
+  switch (operator) {
+    case '+':
+      expression = num1 + num2;
+      break;
+    case '-':
+      expression = num1 - num2;
+      break;
+    case '*':
+      expression = num1 * num2;
+      break;
+    default:
+      expression = 0;
+      break;
+  };
+return expression;
+};
 
 const playCalcGame = () => {
   const playerName = getName();
@@ -19,7 +38,7 @@ const playCalcGame = () => {
     console.log('What is the result of the expression?');
     console.log(`Question: ${num1} ${operator} ${num2}`);
     const answer = Number(readlineSync.question(`Your answer: `));
-    const isCorrect = correctnessCheck(answer, expression, playerName);
+    const isCorrect = checkCorrectness(answer, expression, playerName);
     continueOrEnd = isCorrect;
   };
   console.log(`Congratulations, ${playerName}`);

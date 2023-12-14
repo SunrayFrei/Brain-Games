@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/SunrayFrei/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SunrayFrei/frontend-project-44/actions)",
+  "description": "Brain Games: 1. brain-even; 2. brain-calc; 3. brain-gcd; 4. brain-progression; 5. brain-gcd; [![Actions Status](https://github.com/SunrayFrei/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SunrayFrei/frontend-project-44/actions)",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -18,12 +18,12 @@
     "brain-prime": "bin/games/brain-prime.js"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.29.0",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "eslint": "^8.54.0",
-    "eslint-plugin-react": "^7.33.2"
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0"
   }
 }

@@ -1,8 +1,15 @@
 import readlineSync from 'readline-sync';
 import getName from '../cli.js';
-import { genNumUnderTen, correctnessCheck, findGCD } from './general.js';
+import { genNumUnderTen, checkCorrectness } from './utils.js';
 
-
+const findGCD = (a, b) => {
+  while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+};
 
 const playGCDGame = () => {
   const playerName = getName();
@@ -18,7 +25,7 @@ const playGCDGame = () => {
   const resultGCD = findGCD(num1, num2);
   console.log(`Question: ${num1} and ${num2}`);
   const answer = Number(readlineSync.question(`Your answer: `));
-  const isCorrect = correctnessCheck(answer, resultGCD, playerName);
+  const isCorrect = checkCorrectness(answer, resultGCD, playerName);
   continueOrEnd = isCorrect;
   };
   console.log(`Congratulations, ${playerName}`);

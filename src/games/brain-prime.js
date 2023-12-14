@@ -1,6 +1,20 @@
 import readlineSync from 'readline-sync';
 import getName from '../cli.js';
-import { genNumUnderTen, isPrime, correctnessCheck } from './general.js';
+import { genNumUnderTen, checkCorrectness } from './utils.js';
+
+const isPrime = (num) => {
+  if (num <= 1) {
+      return 'no';
+    }
+
+  if (num === 2) {
+    return 'yes';
+  }
+
+  for (let i = 2; i < num; i += 1) {
+      return num % i === 0 ? 'no' : 'yes'
+    }
+};
 
 const playPrimeGame = () => {
   const playerName = getName();
@@ -15,7 +29,7 @@ const playPrimeGame = () => {
     console.log(`Answer "yes" if given number is prime. Otherwise answer "no".`);
     console.log(`Question: ${num}`);
     const answer = readlineSync.question(`Your answer: `).toLowerCase();
-    const isCorrect = correctnessCheck(answer, correctAnswer, playerName);
+    const isCorrect = checkCorrectness(answer, correctAnswer, playerName);
     continueOrEnd = isCorrect;
   };
   console.log(`Congratulations, ${playerName}`);
