@@ -18,7 +18,7 @@ const hideElement = (progression, index) => {
   const hiddenProgression = [...progression];
   hiddenProgression[index] = '..';
   const progressionAsString = hiddenProgression.join(' ');
-  return progressionAsString; 
+  return progressionAsString;
 };
 
 const playProgressionGame = () => {
