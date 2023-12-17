@@ -10,12 +10,10 @@ const checkCorrectness = (playersAnswer, correctAnswer, playerName) => {
   if (playersAnswer === correctAnswer) {
     console.log(`Correct!`);
     return true;
-  } else {
-    console.log(`'${playersAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-    console.log(`Let's try again, ${playerName}!`);
-    return false;
   }
+  console.log(`'${playersAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+  console.log('Let's try again, ${playerName}!');
+  return false;
 };
-
 
 export { genNumUnderTen, genNum, checkCorrectness };
