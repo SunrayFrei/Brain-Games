@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import getName from './cli.js';
-import { genNumUnderTen, checkCorrectness } from './utils.js';
+import { genNumber, checkCorrectness } from './utils.js';
 
 const isPrime = (num) => {
   if (num <= 1) {
@@ -27,7 +27,7 @@ const playPrimeGame = () => {
     if (continueOrEnd === false) {
       return;
     }
-    const num = genNumUnderTen();
+    const num = genNumber(0, 10);
     const correctAnswer = isPrime(num);
     console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
     console.log(`Question: ${num}`);
