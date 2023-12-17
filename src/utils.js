@@ -1,10 +1,6 @@
-const genNumUnderTen = () => {
-  return Math.floor(Math.random() * 10) + 1;
-};
+const genNumUnderTen = () => Math.floor(Math.random() * 10) + 1;
 
-const genNum = () => {
-  return Math.floor(Math.random() * 100) + 1;
-};
+const genNum = () => Math.floor(Math.random() * 100) + 1;
 
 const checkCorrectness = (playersAnswer, correctAnswer, playerName) => {
   if (playersAnswer === correctAnswer) {
