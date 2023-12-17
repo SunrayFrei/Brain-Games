@@ -16,9 +16,9 @@ const getExpression = (num1, num2, operator) => {
       break;
     default:
       expression = 0;
-break;
-};
-return expression;
+      break;
+  }
+  return expression;
 };
 
 const playCalcGame = () => {
@@ -37,10 +37,10 @@ const playCalcGame = () => {
     const expression = getExpression(num1, num2, operator);
     console.log('What is the result of the expression?');
     console.log(`Question: ${num1} ${operator} ${num2}`);
-    const answer = Number(readlineSync.question(`Your answer: `));
+    const answer = Number(readlineSync.question('Your answer: '));
     const isCorrect = checkCorrectness(answer, expression, playerName);
     continueOrEnd = isCorrect;
-  };
+  }
   console.log(`Congratulations, ${playerName}!`);
 };
 
