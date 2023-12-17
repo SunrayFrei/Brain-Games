@@ -34,7 +34,7 @@ const playProgressionGame = () => {
     console.log('What number is missing in the progression?');
     console.log(hiddenProgression);
     const answer = Number(readlineSync.question(`Your answer: `));
-    const isCorrect = checkCorrectness(answer, progression[index], playerName);
+    const isCorrect = correctnessCheck(answer, progression[index], playerName);
     continueOrEnd = isCorrect;
   };
   console.log(`Congratulations, ${playerName}`);

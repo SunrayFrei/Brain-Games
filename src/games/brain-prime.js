@@ -29,7 +29,7 @@ const playPrimeGame = () => {
     console.log(`Answer "yes" if given number is prime. Otherwise answer "no".`);
     console.log(`Question: ${num}`);
     const answer = readlineSync.question(`Your answer: `).toLowerCase();
-    const isCorrect = checkCorrectness(answer, correctAnswer, playerName);
+    const isCorrect = correctnessCheck(answer, correctAnswer, playerName);
     continueOrEnd = isCorrect;
   };
   console.log(`Congratulations, ${playerName}`);

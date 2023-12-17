@@ -16,7 +16,7 @@ const playEvenGame = () => {
     console.log(`Question: ${number}`);
     const answer = readlineSync.question(`Your answer: `).toLowerCase();
     const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
-    const isCorrect = checkCorrectness(answer, correctAnswer, playerName);
+    const isCorrect = correctnessCheck(answer, correctAnswer, playerName);
     continueOrEnd = isCorrect;
   };
   console.log(`Congratulations, ${playerName}`);

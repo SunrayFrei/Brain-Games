@@ -25,7 +25,7 @@ const playGCDGame = () => {
   const resultGCD = findGCD(num1, num2);
   console.log(`Question: ${num1} and ${num2}`);
   const answer = Number(readlineSync.question(`Your answer: `));
-  const isCorrect = checkCorrectness(answer, resultGCD, playerName);
+  const isCorrect = correctnessCheck(answer, resultGCD, playerName);
   continueOrEnd = isCorrect;
   };
   console.log(`Congratulations, ${playerName}`);
