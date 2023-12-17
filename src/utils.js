@@ -1,6 +1,4 @@
-const genNumUnderTen = () => Math.floor(Math.random() * 10) + 1;
-
-const genNum = () => Math.floor(Math.random() * 100) + 1;
+const genNumber = (min = 0, max = 100, n = 1) => Math.floor(Math.random() * max - min + n);
 
 const checkCorrectness = (playersAnswer, correctAnswer, playerName) => {
   if (playersAnswer === correctAnswer) {
@@ -12,4 +10,4 @@ const checkCorrectness = (playersAnswer, correctAnswer, playerName) => {
   return false;
 };
 
-export { genNumUnderTen, genNum, checkCorrectness };
+export { genNumber, checkCorrectness };
