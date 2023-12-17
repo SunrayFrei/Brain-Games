@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import getName from './cli.js';
-import { genNum, checkCorrectness } from './utils.js';
+import { genNumber, checkCorrectness } from './utils.js';
 
 const playEvenGame = () => {
   const playerName = getName();
@@ -11,7 +11,7 @@ const playEvenGame = () => {
     if (continueOrEnd === false) {
       return;
     }
-    const number = genNum();
+    const number = genNumber(0, 100);
     console.log(`Question: ${number}`);
     const answer = readlineSync.question('Your answer: ').toLowerCase();
     const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
