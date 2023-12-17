@@ -6,7 +6,7 @@ const playEvenGame = () => {
   const playerName = getName();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let continueOrEnd = true;
-  
+
   for (let i = 0; i < 3; i += 1) {
     if (continueOrEnd === false) {
       return;
