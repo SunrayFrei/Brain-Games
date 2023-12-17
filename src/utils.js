@@ -8,11 +8,11 @@ const genNum = () => {
 
 const checkCorrectness = (playersAnswer, correctAnswer, playerName) => {
   if (playersAnswer === correctAnswer) {
-    console.log(`Correct!`);
+    console.log('Correct!');
     return true;
   }
   console.log(`'${playersAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-  console.log('Let\'s try again, ${playerName}!');
+  console.log(`Let's try again, ${playerName}!`);
   return false;
 };
 
