@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import getName from '../cli.js';
+import getName from './cli.js';
 import { checkCorrectness } from './utils.js';
 
 const generateProgression = () => {

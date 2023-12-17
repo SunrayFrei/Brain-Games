@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import getName from '../cli.js';
-import { genNum, checkCorrectness } from './general.js';
+import getName from './cli.js';
+import { genNum, checkCorrectness } from './utils.js';
 
 
 const playEvenGame = () => {
