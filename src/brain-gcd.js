@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import getName from './cli.js';
-import { genNumUnderTen, checkCorrectness } from './utils.js';
+import { genNumber, checkCorrectness } from './utils.js';
 
 const findGCD = (num1, num2) => {
   let a = num1;
@@ -22,8 +22,8 @@ const playGCDGame = () => {
       return;
     }
     console.log('Find the greatest common divisor of given numbers.');
-    const num1 = genNumUnderTen();
-    const num2 = genNumUnderTen();
+    const num1 = genNumber(0, 10);
+    const num2 = genNumber(0, 10);
     const resultGCD = findGCD(num1, num2);
     console.log(`Question: ${num1} ${num2}`);
     const answer = Number(readlineSync.question('Your answer: '));
