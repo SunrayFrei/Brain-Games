@@ -1,12 +1,12 @@
 import readlineSync from 'readline-sync';
 import getName from './cli.js';
-import { checkCorrectness } from './utils.js';
+import { genNumber, checkCorrectness } from './utils.js';
 
 const generateProgression = () => {
-  const length = Math.floor(Math.random() * 6) + 5;
+  const length = genNumber(0, 6, 5);
 
-  const start = Math.floor(Math.random() * 10) + 1;
-  const difference = Math.floor(Math.random() * 5) + 1;
+  const start = genNumber(0, 10);
+  const difference = genNumber(0, 5);
   const progression = [];
   for (let i = 0; i < length; i += 1) {
     progression.push(start + (i * difference));
