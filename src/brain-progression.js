@@ -33,7 +33,7 @@ const playProgressionGame = () => {
     const index = Math.floor(Math.random() * (progression.length - 1));
     const hiddenProgression = hideElement(progression, index);
     console.log('What number is missing in the progression?');
-    console.log(hiddenProgression);
+    console.log(`Question: ${hiddenProgression}`);
     const answer = Number(readlineSync.question(`Your answer: `));
     const isCorrect = checkCorrectness(answer, progression[index], playerName);
     continueOrEnd = isCorrect;
