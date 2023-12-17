@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import getName from './cli.js';
-import { genNumUnderTen, checkCorrectness } from './utils.js';
+import { genNumber, checkCorrectness } from './utils.js';
 
 const getExpression = (num1, num2, operator) => {
   let expression = 0;
@@ -30,8 +30,8 @@ const playCalcGame = () => {
     if (continueOrEnd === false) {
       return;
     }
-    const num1 = genNumUnderTen();
-    const num2 = genNumUnderTen();
+    const num1 = genNumber(0, 10);
+    const num2 = genNumber(0, 10);
     const operators = ['+', '-', '*'];
     const operator = operators[Math.floor(Math.random() * operators.length)];
     const expression = getExpression(num1, num2, operator);
