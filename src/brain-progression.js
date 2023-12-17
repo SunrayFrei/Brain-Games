@@ -20,6 +20,7 @@ const hideElement = (progression, index) => {
   const progressionAsString = hiddenProgression.join(' ');
   return progressionAsString; 
 };
+
 const playProgressionGame = () => {
   const playerName = getName();
   
@@ -37,7 +38,7 @@ const playProgressionGame = () => {
     const isCorrect = checkCorrectness(answer, progression[index], playerName);
     continueOrEnd = isCorrect;
   };
-  console.log(`Congratulations, ${playerName}`);
+  console.log(`Congratulations, ${playerName}!`);
 };
 
 export default playProgressionGame;

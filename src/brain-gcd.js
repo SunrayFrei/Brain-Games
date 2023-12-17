@@ -28,7 +28,7 @@ const playGCDGame = () => {
   const isCorrect = checkCorrectness(answer, resultGCD, playerName);
   continueOrEnd = isCorrect;
   };
-  console.log(`Congratulations, ${playerName}`);
+  console.log(`Congratulations, ${playerName}!`);
 };
 
 export default playGCDGame;

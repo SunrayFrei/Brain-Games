@@ -32,7 +32,7 @@ const playPrimeGame = () => {
     const isCorrect = checkCorrectness(answer, correctAnswer, playerName);
     continueOrEnd = isCorrect;
   };
-  console.log(`Congratulations, ${playerName}`);
+  console.log(`Congratulations, ${playerName}!`);
 };
 
 export default playPrimeGame;

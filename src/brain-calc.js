@@ -41,7 +41,7 @@ const playCalcGame = () => {
     const isCorrect = checkCorrectness(answer, expression, playerName);
     continueOrEnd = isCorrect;
   };
-  console.log(`Congratulations, ${playerName}`);
+  console.log(`Congratulations, ${playerName}!`);
 };
 
 export default playCalcGame;
