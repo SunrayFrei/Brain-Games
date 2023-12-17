@@ -2,7 +2,9 @@ import readlineSync from 'readline-sync';
 import getName from './cli.js';
 import { genNumUnderTen, checkCorrectness } from './utils.js';
 
-const findGCD = (a, b) => {
+const findGCD = (num1, num2) => {
+  let a = num1;
+  let b = num2;
   while (b !== 0) {
     const temp = b;
     b = a % b;
@@ -19,7 +21,7 @@ const playGCDGame = () => {
     if (continueOrEnd === false) {
       return;
     }
-    console.log(`Find the greatest common divisor of given numbers.`);
+    console.log('Find the greatest common divisor of given numbers.');
     const num1 = genNumUnderTen();
     const num2 = genNumUnderTen();
     const resultGCD = findGCD(num1, num2);
