@@ -29,12 +29,12 @@ const playPrimeGame = () => {
     }
     const num = genNumUnderTen();
     const correctAnswer = isPrime(num);
-    console.log(`Answer "yes" if given number is prime. Otherwise answer "no".`);
+    console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
     console.log(`Question: ${num}`);
-    const answer = readlineSync.question(`Your answer: `).toLowerCase();
+    const answer = readlineSync.question('Your answer: ').toLowerCase();
     const isCorrect = checkCorrectness(answer, correctAnswer, playerName);
     continueOrEnd = isCorrect;
-  };
+  }
   console.log(`Congratulations, ${playerName}!`);
 };
 
