@@ -17,7 +17,7 @@ The game has three rounds. A player is offered a random action with two random n
 - ***Brain-progression***
   The game has three rounds. The player should to identify the missing number in the progression. If the player answers correctly three times, he wins.
   
-____
+
 :white_check_mark: Minimals system requirements: node.js 20.10.0    
 :white_check_mark: Installation instructions: make install    
 ____
