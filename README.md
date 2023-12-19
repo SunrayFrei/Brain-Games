@@ -9,7 +9,7 @@
 The game has three rounds. A player is offered a random action with two random numbers: addition, subtraction, multiplication or division. He should to write the result of this action. If the player answers correctly three times, he wins.
 
 - ***Brain-gcd***
-  The game has three rounds. The player is asked to determine the least common divisor for two proposed numbers. If the player answers correctly three times, he wins.
+  The game has three rounds. The player is asked to determine the greatest common divisor for two proposed numbers. If the player answers correctly three times, he wins.
   
 - ***Brain-prime***
   The game has three rounds. The player is asked to determine whether a number is prime (that is, divisible without remainder only by 1 and itself). If the player answers correctly three times, he wins.
