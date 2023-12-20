@@ -1,8 +1,23 @@
 # Brain Games project
 
-- There are five games: brain-even, brain-calc, brain-gcd, brain-prime and brain-progression.
-- Minimals system requirements: node.js 20.10.0
-- Installation instructions: make install
+:white_check_mark: There are five games: brain-even, brain-calc, brain-gcd, brain-prime and brain-progression.
+
+- **_Brain-even_**
+  The game has three rounds. A random number is offered to the player. He should determine whether it is even. And answer "yes" or "no" accordingly. If the player answers correctly three times, he wins.
+- **_Brain-calc_**
+  The game has three rounds. A player is offered a random action with two random numbers: addition, subtraction, multiplication or division. He should to write the result of this action. If the player answers correctly three times, he wins.
+
+- **_Brain-gcd_**
+  The game has three rounds. The player is asked to determine the greatest common divisor for two proposed numbers. If the player answers correctly three times, he wins.
+- **_Brain-prime_**
+  The game has three rounds. The player is asked to determine whether a number is prime (that is, divisible without remainder only by 1 and itself). If the player answers correctly three times, he wins.
+- **_Brain-progression_**
+  The game has three rounds. The player should to identify the missing number in the progression. If the player answers correctly three times, he wins.
+
+:white_check_mark: Minimals system requirements: node.js 20.10.0  
+:white_check_mark: Installation instructions: make install
+
+---
 
 ### Hexlet tests and linter status:
 
@@ -15,9 +30,3 @@
 [![asciicast](https://asciinema.org/a/kzUjRojloClDgQAF6h4Qid8aP.svg)](https://asciinema.org/a/kzUjRojloClDgQAF6h4Qid8aP)
 
 [![asciicast](https://asciinema.org/a/0wZCRrfUDyvkufxgTsPpJvkib.svg)](https://asciinema.org/a/0wZCRrfUDyvkufxgTsPpJvkib)
-
-[![asciicast](https://asciinema.org/a/hnJvyQnRtVAmcrXw27qmXEXgt.svg)](https://asciinema.org/a/hnJvyQnRtVAmcrXw27qmXEXgt)
-
-[![asciicast](https://asciinema.org/a/Z1O0PlNkI0RZ0gNf4WISTl0Zi.svg)](https://asciinema.org/a/Z1O0PlNkI0RZ0gNf4WISTl0Zi)
-
-[![asciicast](https://asciinema.org/a/PfWjjHCbMpnfbHMAEI03L8Z92.svg)](https://asciinema.org/a/PfWjjHCbMpnfbHMAEI03L8Z92)
