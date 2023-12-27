@@ -30,7 +30,7 @@ const roundOfGame = () => {
   return [question, correctAnswer];
 };
 const playProgressionGame = () => {
-  gameLogic(description, roundOfGame)
+  gameLogic(description, roundOfGame);
 };
 
 export default playProgressionGame;

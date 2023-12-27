@@ -29,7 +29,7 @@ const roundOfGame = () => {
 };
 
 const playCalcGame = () => {
-  gameLogic(description, roundOfGame)
+  gameLogic(description, roundOfGame);
 };
 
 export default playCalcGame;

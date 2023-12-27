@@ -23,7 +23,7 @@ const roundOfGame = () => {
 };
 
 const playGCDGame = () => {
-  gameLogic(description, roundOfGame)
+  gameLogic(description, roundOfGame);
 };
 
 export default playGCDGame;

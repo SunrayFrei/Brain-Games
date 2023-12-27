@@ -21,11 +21,12 @@
   The game has three rounds. The player should to identify the missing number in the progression. If the player answers correctly three times, he wins.
 
 :white_check_mark: Minimals system requirements: Latest version of [Node.js](https://github.com/Hexlet/ru-instructions/blob/main/nodejs.md)
+
 :white_check_mark: Installation instructions: type following command in terminal
 `make install`
 
-:white*check_mark: Launch the game
-\*\*\_Type the commands to start:*\*\*
+:white_check_mark: Launch the game
+Type the commands to start:
 
 - brain-games - enters greetings mode
 - brain-even - starts the game, in which you need to tell is the number even

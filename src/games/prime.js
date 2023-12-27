@@ -23,7 +23,7 @@ const isPrime = (number) => {
 const roundOfGame = () => {
   const number = getNumber(0, 10);
   const correctAnswer = isPrime(number);
-  return [number, correctAnswer]
+  return [number, correctAnswer];
 };
 
 const playPrimeGame = () => {
