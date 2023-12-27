@@ -1,7 +1,7 @@
 import getNumber from '../utils.js';
 import gameLogic from '../index.js';
 
-const description = 'Find the greatest common divisor of given numbers.';
+const description = 'What number is missing in the progression?';
 const generateProgression = () => {
   const length = getNumber(0, 6, 5);
 
