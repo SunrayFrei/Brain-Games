@@ -1,9 +1,26 @@
 # Brain Games project
 
-- There are five games: brain-even, brain-calc, brain-gcd, brain-prime and brain-progression.
-- Minimals system requirements: node.js 20.10.0
-- Installation instructions: make install
+:white_check_mark: There are five games: brain-even, brain-calc, brain-gcd, brain-prime and brain-progression.    
 
+- ***Brain-even***
+  The game has three rounds. A random number is offered to the player. He should determine whether it is even. And answer "yes" or "no" accordingly. If the player answers correctly three times, he wins.
+  
+- ***Brain-calc***
+The game has three rounds. A player is offered a random action with two random numbers: addition, subtraction, multiplication or division. He should to write the result of this action. If the player answers correctly three times, he wins.
+
+- ***Brain-gcd***
+  The game has three rounds. The player is asked to determine the greatest common divisor for two proposed numbers. If the player answers correctly three times, he wins.
+  
+- ***Brain-prime***
+  The game has three rounds. The player is asked to determine whether a number is prime (that is, divisible without remainder only by 1 and itself). If the player answers correctly three times, he wins.
+  
+- ***Brain-progression***
+  The game has three rounds. The player should to identify the missing number in the progression. If the player answers correctly three times, he wins.
+  
+
+:white_check_mark: Minimals system requirements: node.js 20.10.0    
+:white_check_mark: Installation instructions: make install    
+____
 ### Hexlet tests and linter status:
 
 [![Actions Status](https://github.com/SunrayFrei/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SunrayFrei/frontend-project-44/actions)
