@@ -1,5 +1,5 @@
 import getNumber from '../utils.js';
-import gameLogic from '../index.js';
+import runGameLogic from '../index.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -20,14 +20,14 @@ const isPrime = (number) => {
   return 'yes';
 };
 
-const roundOfGame = () => {
+const playARound = () => {
   const number = getNumber(0, 10);
   const correctAnswer = isPrime(number);
   return [number, correctAnswer];
 };
 
 const playPrimeGame = () => {
-  gameLogic(description, roundOfGame);
+  runGameLogic(description, playARound);
 };
 
 export default playPrimeGame;

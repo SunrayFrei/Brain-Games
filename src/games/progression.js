@@ -1,5 +1,5 @@
 import getNumber from '../utils.js';
-import gameLogic from '../index.js';
+import runGameLogic from '../index.js';
 
 const description = 'What number is missing in the progression?';
 const generateProgression = () => {
@@ -21,7 +21,7 @@ const hideElement = (progression, index) => {
   return progressionAsString;
 };
 
-const roundOfGame = () => {
+const playARound = () => {
   const progression = generateProgression();
   const index = getNumber(0, progression.length - 1);
   const hiddenProgression = hideElement(progression, index);
@@ -30,7 +30,7 @@ const roundOfGame = () => {
   return [question, correctAnswer];
 };
 const playProgressionGame = () => {
-  gameLogic(description, roundOfGame);
+  runGameLogic(description, playARound);
 };
 
 export default playProgressionGame;

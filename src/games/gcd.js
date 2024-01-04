@@ -1,5 +1,5 @@
 import getNumber from '../utils.js';
-import gameLogic from '../index.js';
+import runGameLogic from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
@@ -14,7 +14,7 @@ const findGCD = (number1, number2) => {
   return a;
 };
 
-const roundOfGame = () => {
+const playARound = () => {
   const number1 = getNumber(0, 10);
   const number2 = getNumber(0, 10);
   const correctAnswer = findGCD(number1, number2).toString();
@@ -23,7 +23,7 @@ const roundOfGame = () => {
 };
 
 const playGCDGame = () => {
-  gameLogic(description, roundOfGame);
+  runGameLogic(description, playARound);
 };
 
 export default playGCDGame;
