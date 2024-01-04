@@ -3,7 +3,7 @@ import runGameLogic from '../index.js';
 
 const description = 'What is the result of the expression?';
 
-const getExpression = (num1, num2, operator) => {
+const calculateExpression = (num1, num2, operator) => {
   switch (operator) {
     case '+':
       return num1 + num2;
@@ -24,7 +24,7 @@ const playARound = () => {
   const num1 = getRandomNumber(0, 10);
   const num2 = getRandomNumber(0, 10);
   const question = `${num1} ${operator} ${num2}`;
-  const expression = getExpression(num1, num2, operator).toString();
+  const expression = calculateExpression(num1, num2, operator).toString();
   return [question, expression];
 };
 
