@@ -18,9 +18,9 @@ const hideElement = (progression, index) => {
 };
 
 const playARound = () => {
-  const lengthOfTheProg = getRandomNumber(0, 6) + 5;
+  const lengthOfTheProg = getRandomNumber(0, 10) + 5;
   const startNumber = getRandomNumber(0, 10); 
-  const stepOfTheProgression = getRandomNumber(0, 5);
+  const stepOfTheProgression = getRandomNumber(0, 10) + 1;
 
   const progression = generateProgression(lengthOfTheProg, startNumber, stepOfTheProgression);
   const index = getRandomNumber(0, progression.length - 1);
