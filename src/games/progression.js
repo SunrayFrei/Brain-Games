@@ -2,15 +2,10 @@ import getRandomNumber from '../utils.js';
 import runGameLogic from '../index.js';
 
 const description = 'What number is missing in the progression?';
-const generateProgression = () => {
-  const lengthCorrectionNumber = 5;
-  const length = getRandomNumber(0, 6) + lengthCorrectionNumber;
-
-  const start = getRandomNumber(0, 10);
-  const difference = getRandomNumber(0, 5);
+const generateProgression = (lengthOfTheProg, startNumber, stepOfTheProgression) => {
   const progression = [];
-  for (let i = 0; i < length; i += 1) {
-    progression.push(start + (i * difference));
+  for (let i = 1; i < lengthOfTheProg; i += 1) {
+    progression.push(startNumber + (i * stepOfTheProgression));
   }
   return progression;
 };
@@ -23,7 +18,11 @@ const hideElement = (progression, index) => {
 };
 
 const playARound = () => {
-  const progression = generateProgression();
+  const lengthOfTheProg = getRandomNumber(0, 6) + 5;
+  const startNumber = getRandomNumber(0, 10); 
+  const stepOfTheProgression = getRandomNumber(0, 5);
+
+  const progression = generateProgression(lengthOfTheProg, startNumber, stepOfTheProgression);
   const index = getRandomNumber(0, progression.length - 1);
   const hiddenProgression = hideElement(progression, index);
   const question = `${hiddenProgression}`;
