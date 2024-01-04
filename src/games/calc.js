@@ -1,4 +1,4 @@
-import getNumber from '../utils.js';
+import getRandomNumber from '../utils.js';
 import runGameLogic from '../index.js';
 
 const description = 'What is the result of the expression?';
@@ -12,17 +12,17 @@ const getExpression = (num1, num2, operator) => {
     case '*':
       return num1 * num2;
     default:
-      return 0;
+      throw new Error(`Unknown order state: '${operator}'!`);
   }
 };
 
 const playARound = () => {
   const operators = ['+', '-', '*'];
-  const randomIndexOfOperators = getNumber(0, operators.length - 1);
+  const randomIndexOfOperators = getRandomNumber(0, operators.length - 1);
   const operator = operators[randomIndexOfOperators];
 
-  const num1 = getNumber(0, 10);
-  const num2 = getNumber(0, 10);
+  const num1 = getRandomNumber(0, 10);
+  const num2 = getRandomNumber(0, 10);
   const question = `${num1} ${operator} ${num2}`;
   const expression = getExpression(num1, num2, operator).toString();
   return [question, expression];
