@@ -9,7 +9,7 @@ const runGameLogic = (description, playRound) => {
   console.log(description);
 
   const roundsCount = 3;
-  
+
   for (let i = 1; i <= roundsCount; i += 1) {
     const [condition, correctAnswer] = playRound();
     console.log(`Question: ${condition}`);
